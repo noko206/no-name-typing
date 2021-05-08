@@ -12,6 +12,11 @@
         body {
             background-image: url("{{ asset('img/top_background.png') }}");
         }
+        #main-content {
+            width: 860px;
+            margin: 0 auto;
+            padding-bottom: 30px;
+        }
     </style>
 @endsection
 
