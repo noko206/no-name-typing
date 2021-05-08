@@ -11,9 +11,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        if (App::environment() === 'production') {
-            $this->call('WordsTableSeeder');
-        }
+        $this->call('WordsTableSeeder');
         // $this->call(UsersTableSeeder::class);
     }
 }
