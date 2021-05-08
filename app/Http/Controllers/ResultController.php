@@ -79,6 +79,11 @@ class ResultController extends Controller
         $user_num++;
         $my_junni = \App\Result::whereRaw('user_id = :user_id and time <= :time', ['user_id' => $request->user_id, 'time' => $request->time])->count();
         $my_num = \App\Result::where('user_id', $request->user_id)->count();
+        
+        if($my_num === 1){
+            $user_num -= 1;
+        }
+        
         return view('result', ['user_junni' => $user_junni, 'user_num' => $user_num, 'my_junni' => $my_junni, 'my_num' => $my_num]);
         // // return redirect('/');
     }
