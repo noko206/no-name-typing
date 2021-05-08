@@ -21,7 +21,7 @@
             <p>{{ $login_message1 }}<?= Auth::user()->name ?>さん。<br>{{ $login_message2 }}</p>
         </div>
     @endif
-    <div id="main" class="card border-secondary mb-3" style="width:860px;">
+    <div id="main-content" class="card border-secondary mb-3">
         <div id="current-key-field">
             <p id="current-key-roma"><span id="typed"></span><span id="missed"></span><span id="untyped"></span></p>
         </div>
