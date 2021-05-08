@@ -1,0 +1,30 @@
+.junni {
+    color: #ffffff;
+    font-family: "メイリオ", sans-serif;
+    font-weight: bold;
+    font-size: 64px;
+    font-style: oblique;
+    text-shadow: 0px 0px 5px #ffffff,
+    0px 0px 6px #326693,
+    0px 0px 7px #326693,
+    0px 0px 8px #31a9ee,
+    0px 0px 9px #31a9ee;
+}
+
+.num {
+    color: #ffffff;
+    font-family: "メイリオ", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    font-style: oblique;
+    text-shadow: 0px 0px 5px #ffffff,
+    0px 0px 6px #326693,
+    0px 0px 7px #326693,
+    0px 0px 8px #31a9ee,
+    0px 0px 9px #31a9ee;
+}
+
+.content {
+    text-align: center;
+    margin-top: 50px;
+}
