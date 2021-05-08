@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="{{ asset('css/result.css') }}">
     <script src="{{ asset('js/app.js') }}"></script>
     <title>リザルト</title>
+    <style>
+        .content {
+            padding-top: 120px;
+            padding-bottom: 120px;
+            background-image: url("{{ asset('img/result_frame.png') }}");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: top center;
+        }
+    </style>
 @endsection
 
 @section('content')

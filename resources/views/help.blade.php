@@ -19,8 +19,6 @@
     </ol></p>
     <p class="h5 m-3 p-2 mb-2 bg-info text-white">ランキングに登録できません</p>
     <p class="ml-4 mr-4">ログインしてください。ログインしているとトップ画面の右上部にメッセージが表示されます。</p>
-    <p class="h5 m-3 p-2 mb-2 bg-info text-white">マイページのレコードに記録が反映されません</p>
-    <p class="ml-4 mr-4">ランキングに登録しないと記録は保存されません。</p>
     <p class="h5 m-3 p-2 mb-2 bg-info text-white">ランクって何ですか</p>
     <p class="ml-4 mr-4">タイムに基づくタイピング速度の指標です。<br>
         230秒を切るとランクF。
@@ -28,8 +26,12 @@
         （230秒=>F, 220秒=>F+, 210秒=>E-, ... , 80秒=>A）<br>
         ランクAからは2秒短縮するごとにランクが1つずつ上がっていきます。<br>
         （78秒=>A+, 76秒=>S, 74秒=>SS, 72秒=>SSS, ...）</p>
+    <p class="h5 m-3 p-2 mb-2 bg-info text-white">マイページのレコードに記録が反映されません</p>
+    <p class="ml-4 mr-4">ランキングに登録しないと記録は保存されません。</p>
     <p class="h5 m-3 p-2 mb-2 bg-info text-white">Top15とTop99ってなんですか</p>
     <p class="ml-4 mr-4">上位の記録の平均になります。Top15が上位15個のデータの平均、Top99が上位99個のデータの平均です。<br>
+    <p class="h5 m-3 p-2 mb-2 bg-info text-white">マイページのレコードの記録が99個までしか表示されません</p>
+    <p class="ml-4 mr-4">仕様です。</p>
     <p class="h5 m-3 p-2 mb-2 bg-info text-white">おすすめのタイピングゲームはありますか</p>
     <p class="ml-4 mr-4">
         よく遊んでいる（遊んでいた）タイピングゲームを列挙してみました。順番は思いついた順です。

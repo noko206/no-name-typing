@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <script src="{{ asset('js/app.js') }}"></script>
     <title>{{ config('app.name') }}</title>
+    <style>
+        body {
+            background-image: url("{{ asset('img/top_background.png') }}");
+        }
+    </style>
 @endsection
 
 @section('content')
@@ -16,38 +21,41 @@
             <p>{{ $login_message1 }}<?= Auth::user()->name ?>さん。<br>{{ $login_message2 }}</p>
         </div>
     @endif
-    <div id="current-key-field">
-        <p id="current-key-roma"><span id="typed"></span><span id="missed"></span><span id="untyped"></span></p>
+    <div id="main" class="card border-secondary mb-3">
+        <div id="current-key-field">
+            <p id="current-key-roma"><span id="typed"></span><span id="missed"></span><span id="untyped"></span></p>
+        </div>
+        <div id="sentence-field" class="card border-secondary mb-3"><p id="sentence"></p></div>
+        <table id="curernt-data-table">
+            <tr>
+                <td class="current-data-td"><span id="type-count" class="param-box">タイプ数：0</span></td>
+                <td class="current-data-td"><span id="miss-count" class="param-box">ミス数：0</span></td>
+                <td class="current-data-td"><span id="current-time" class="param-box">タイム：0.000</span></td>
+            </tr>
+        </table>
+        <table id="result-table">
+            <tr>
+                <td rowspan="2" class="result-table-td" id="result-table-rank"><span style="font-size:24px">Rank　</span><span id="rank-span"></span></td>
+                <td>
+                    <form action="{{ route('results.store') }}" method="post">
+                        @csrf
+                        <input type="hidden" name="time" id="time-hidden" value="">
+                        <input type="hidden" name="miss" id="miss-hidden" value="">
+                        <input type="hidden" name="user_id" id="user-id-hidden" value="{{ Auth::id() }}">
+                        @if (Auth::check())
+                            <button type="submit" id="ranking-button" class="btn btn-outline-dark">ランキングに登録する(Enter)</button>
+                        @else
+                            <button type="submit" id="ranking-button" class="btn btn-outline-dark" disabled>ランキングに登録する</button>
+                        @endif
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td><button id="retry-button" class="btn btn-outline-dark">もう一度プレイ(Esc)</button></td>
+            </tr>
+        </table>
     </div>
-    <div id="sentence-field" class="card border-secondary mb-3"><p id="sentence"></p></div>
-    <table id="curernt-data-table">
-        <tr>
-            <td id="type-count" style="width:33%">タイプ数：0</td>
-            <td id="miss-count" style="width:33%">ミス数：0</td>
-            <td id="current-time" style="width:33%">タイム：0.000</td>
-        </tr>
-    </table>
-    <table id="result-table">
-        <tr>
-            <td rowspan="2" class="result-table-td" id="result-table-rank"><span style="font-size:24px">Rank　</span><span id="rank-span"></span></td>
-            <td>
-                <form action="{{ route('results.store') }}" method="post">
-                    @csrf
-                    <input type="hidden" name="time" id="time-hidden" value="">
-                    <input type="hidden" name="miss" id="miss-hidden" value="">
-                    <input type="hidden" name="user_id" id="user-id-hidden" value="{{ Auth::id() }}">
-                    @if (Auth::check())
-                        <button type="submit" id="ranking-button" class="btn btn-outline-dark">ランキングに登録する(Enter)</button>
-                    @else
-                        <button type="submit" id="ranking-button" class="btn btn-outline-dark" disabled>ランキングに登録する</button>
-                    @endif
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td><button id="retry-button" class="btn btn-outline-dark">もう一度プレイ(Esc)</button></td>
-        </tr>
-    </table>
+    <p style="text-align:center;">遊び方は<a href="{{ route('help') }}">ヘルプ</a>を参照してください。</p>
     <script>
         function getRandomInt(min, max) {
             min = Math.ceil(min);
@@ -58,7 +66,7 @@
         function createRandomWords(){
             let cnt = -1;
             let _words = [];
-            while(cnt < 400){
+            while(cnt < 405){
                 var random = getRandomInt(0, words_obj.length - 1);
                 _words.push({'word': words_obj[random]['word'], 'yomi': words_obj[random]['yomi'] + ' '});
                 cnt += words_obj[random]['key'] + 1;
