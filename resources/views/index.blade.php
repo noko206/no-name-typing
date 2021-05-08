@@ -16,6 +16,25 @@
             width: 860px;
             margin: 0 auto;
             padding-bottom: 30px;
+            margin-top: 10px;
+        }
+        .param-box {
+            display: inline-block;
+            width: 90%;
+            padding: 5px;
+            padding-left: 15px;
+            color: black;
+            font-size: 24px;
+        }
+        #sentence-field {
+            width: 800px;
+            height: 360px;
+            margin: 0 auto;
+            color: black;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 26px;
+            font-family: 'Meiryo UI';
         }
     </style>
 @endsection

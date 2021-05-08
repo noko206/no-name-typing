@@ -20,17 +20,6 @@
     font-size: 32px;
 }
 
-#sentence-field {
-    width: 800px;
-    height: 360px;
-    margin: 0 auto;
-    color: black;
-    padding: 15px;
-    margin-top: 20px;
-    font-size: 26px;
-    font-family: 'Meiryo UI';
-}
-
 #result-table {
     width: 800px;
     text-align: center;
@@ -101,26 +90,4 @@
     0px 0px 7px #326693,
     0px 0px 8px #31a9ee,
     0px 0px 9px #31a9ee;
-}
-
-.param-box {
-    display: inline-block;
-    width: 90%;
-    /* border: solid 1px black;
-    border-radius: 15px; */
-    padding: 5px;
-    padding-left: 15px;
-    color: black;
-    font-size: 24px;
-    /* font-weight: bold; */
-    /* text-shadow:
-    1px  1px 5px green,
-    -1px  1px 5px green,
-    1px -1px 5px green,
-    -1px -1px 5px green; */
-    /* 1px  0px 5px green,
-    0px  1px 5px green,
-    -1px  0px 5px green,
-    0px -1px 5px green; */
-    
 }
