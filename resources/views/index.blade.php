@@ -188,6 +188,34 @@
                     untyped.innerHTML = '';
                     type_count++;
                     current_key += key;
+                    // 400文字打ったとき
+                    if(type_count >= 400){
+                        end_time = performance.now();
+                        clearInterval(timer);
+                        type_count.innerHTML = type_count;
+                        time = (end_time - start_time) / 1000;
+                        current_time.innerHTML = 'タイム：' + time.toFixed(3);
+                        is_clear = true;
+                        // currentromaの表示を続ける
+                        typed.innerHTML = '　';
+                        // sentenceのwordをすべてグレーにする
+                        for(const w of word_span){
+                            w.style.color = 'rgb(224,224,224)';
+                        }
+                        // カウントの表示
+                        _type_count.innerHTML = 'タイプ数：400';
+                        _miss_count.innerHTML = 'ミス数：' + miss_count;
+                        // resultの表示
+                        rank_span.innerHTML = getRank(time.toFixed(3));
+                        result_table.classList.add('fadein');
+                        result_table.style.visibility = 'visible';
+                        // ランキング登録用のhiddenの更新
+                        time_hidden.value = time.toFixed(3);
+                        miss_hidden.value = miss_count;
+                        // 効果音
+                        clear_sound.play();
+                        return;
+                    }
                     // 描画
                     for(const t of typed_roma){
                         typed.innerHTML += t;
