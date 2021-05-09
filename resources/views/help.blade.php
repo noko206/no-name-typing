@@ -17,6 +17,15 @@
         <li>ミスによるスコアの減点はありません。</li>
         <li>400文字タイピングしたら終了です。</li>
     </ol></p>
+    <p class="h5 m-3 p-2 mb-2 bg-info text-white">jaをzyaと入力したらタイプ数はどうなりますか</p>
+    <p class="ml-4 mr-4">jaはタイプ数2、zyaはタイプ数3でカウントされます。zyaと入力してもタイプ数が2でカウントされることはないので、実際の入力回数とカウントされるタイプ数が異なることはありません。<br>
+        ローマ字入力のキーの組み合わせは以下を参照してください。大抵の組み合わせには対応しています。
+        <div style="margin:20px">
+            <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://support.microsoft.com/ja-jp/topic/%25E3%2583%25AD%25E3%2583%25BC%25E3%2583%259E%25E5%25AD%2597%25E5%2585%25A5%25E5%258A%259B%25E3%2581%25AE%25E3%2581%25A4%25E3%2581%25A5%25E3%2582%258A%25E4%25B8%2580%25E8%25A6%25A7%25E8%25A1%25A8%25E3%2582%2592%25E7%25A2%25BA%25E8%25AA%258D%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2582%2588%25E3%2581%2586-bcc0ad7e-2781-cc9a-e524-7de506d8fdae" data-iframely-url="//cdn.iframe.ly/8ICYaEL"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+        </div>
+    </p>
+    <p class="h5 m-3 p-2 mb-2 bg-info text-white">「＿」（アンダーバー）の直前の「ん」の入力はnとnnどちらですか</p>
+    <p class="ml-4 mr-4">どちらでも問題ありません。どちらで入力してもミスになりません。また、nはタイプ数1、nnはタイプ数2できちんとカウントされます。（もちろんxnでも問題ありません。）</p>
     <p class="h5 m-3 p-2 mb-2 bg-info text-white">ランキングに登録できません</p>
     <p class="ml-4 mr-4">ログインしてください。ログインしているとトップ画面の右上部にメッセージが表示されます。</p>
     <p class="h5 m-3 p-2 mb-2 bg-info text-white">ランクって何ですか</p>
@@ -67,7 +76,7 @@
         </ul>
     </p>
     <p class="h5 m-3 p-2 mb-2 bg-info text-white">タイピングが速い人ってどのくらい速いの</p>
-    <p class="ml-4 mr-4">トップスピードで秒間20打鍵くらいです。――といってもにわかには信じがたい数字です。本当にそんなスピードでタイピングができるのかと疑問を持たれるかとは思いますが、とはいえ論より証拠。数多のタイピングガチ勢が集う大会REALFORCE TYPING CHAMPIONSHIP（RTC）についての記事とアーカイブを載せておきました。興味のある方は一度目を通してみてはいかがでしょうか。<br>
+    <p class="ml-4 mr-4">平均で秒間18～20打鍵くらいです。――といってもにわかには信じがたい数字です。本当にそんなスピードでタイピングができるのかと疑問を持たれるかとは思いますが、とはいえ論より証拠。以下に、数多のタイピングガチ勢が集う大会REALFORCE TYPING CHAMPIONSHIP（RTC）についての記事とアーカイブを載せておきました。興味のある方は是非一度目を通していただけたら嬉しいです。<br>
         <div style="margin:20px">
             <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://www.famitsu.com/news/201709/29143039.html" data-iframely-url="//cdn.iframe.ly/pgHld7W?iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
             <br>
