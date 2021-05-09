@@ -61,6 +61,10 @@ class ResultController extends Controller
         if($request->user_id !== Auth::id()){
             return redirect('/');
         }
+        $latest_result = \App\Result::orderBy('created_at', 'desc')->first();
+        if($request->id !== $latest_result->id){
+            return redirect('/');
+        }
         $user_junni = 0;
         $user_num = 0;
         $my_junni = 0;
