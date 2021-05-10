@@ -17,7 +17,7 @@
             <h1 class="h3 mb-3 fw-normal">新規登録</h1><br>
             @include('commons/flash')
             <label for="inputName" class="visually-hidden">名前</label>
-            <input type="text" name="name" value="{{ old('name') }}" id="inputName" class="form-control" placeholder="名前" required autofocus>
+            <input type="text" name="name" value="{{ old('name') }}" id="inputName" class="form-control" placeholder="名前" maxlength="24" required autofocus>
             <label for="inputEmail" class="visually-hidden">メールアドレス</label>
             <input type="email" name="email" value="{{ old('email') }}" id="inputEmail" class="form-control" placeholder="メールアドレス" required>
             <label for="inputPassword" class="visually-hidden">パスワード</label>
